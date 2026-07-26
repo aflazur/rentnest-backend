@@ -34,7 +34,6 @@ enum RentalRequestStatus {
 
 enum PaymentProvider {
   STRIPE
-  SSLCOMMERZ
 }
 
 enum PaymentStatus {
