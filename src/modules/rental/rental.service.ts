@@ -117,7 +117,7 @@ const updateRentalRequestStatus = async (
         throw new ApiError(httpStatus.BAD_REQUEST, `This request has already been ${rentalRequest.status.toLowerCase()}`);
     }
 
-    const updated = await prisma.$transaction(async (tx) => {
+    const updated = await prisma.$transaction(async (tx: any) => {
         const result = await tx.rentalRequest.update({
             where: { id },
             data: {

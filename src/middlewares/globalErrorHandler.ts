@@ -19,7 +19,7 @@ export const globalErrorHandler = (
     console.error("Error:", err);
   }
 
-  let statusCode = httpStatus.INTERNAL_SERVER_ERROR;
+  let statusCode: number = httpStatus.INTERNAL_SERVER_ERROR;
   let message = "Something went wrong. Please try again later.";
   let errorDetails: unknown = err.message || null;
 
