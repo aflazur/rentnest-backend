@@ -14,4 +14,11 @@ router.post(
   paymentController.createPayment
 );
 
+// Handles both the Stripe browser redirect (GET) and manual/webhook confirmation (POST)
+router.get("/confirm", paymentController.confirmPayment);
+router.post("/confirm", paymentController.confirmPayment);
+
+router.get("/", auth(), paymentController.getUserPayments);
+router.get("/:id", auth(), paymentController.getSinglePayment);
+
 export const paymentRoutes = router;
