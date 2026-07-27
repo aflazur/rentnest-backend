@@ -5,6 +5,7 @@ import { validateRequest } from "../../middlewares/validateRequest";
 import { rentalController } from "./rental.controller";
 import { rentalValidation } from "./rental.validation";
 
+
 const router = Router();
 
 router.post(

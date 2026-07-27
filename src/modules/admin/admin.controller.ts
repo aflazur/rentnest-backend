@@ -5,6 +5,7 @@ import { pick } from "../../utils/pick";
 import { sendResponse } from "../../utils/sendResponse";
 import { adminService } from "./admin.service";
 
+
 const paginationFields = ["page", "limit", "sortBy", "sortOrder"];
 
 const getAllUsers = catchAsync(async (req: Request, res: Response) => {

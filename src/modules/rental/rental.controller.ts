@@ -4,6 +4,7 @@ import { catchAsync } from "../../utils/catchAsync";
 import { sendResponse } from "../../utils/sendResponse";
 import { rentalService } from "./rental.service";
 
+
 const createRentalRequest = catchAsync(async (req: Request, res: Response) => {
     const result = await rentalService.createRentalRequest(req.user!.id, req.body);
 

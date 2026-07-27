@@ -6,6 +6,8 @@ import { sendResponse } from "../../utils/sendResponse";
 import { propertyFilterableFields } from "./property.interface";
 import { propertyService } from "./property.service";
 
+
+
 const getAllProperties = catchAsync(async (req: Request, res: Response) => {
     const filters = pick(req.query, propertyFilterableFields);
     const options = pick(req.query, ["page", "limit", "sortBy", "sortOrder"]);

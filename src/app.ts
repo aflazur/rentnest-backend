@@ -8,6 +8,7 @@ import { globalErrorHandler } from "./middlewares/globalErrorHandler";
 import { notFound } from "./middlewares/notFound";
 import { apiRouter } from "./routes";
 
+
 const app: Application = express();
 
 // Security & core middlewares

@@ -5,6 +5,7 @@ import { catchAsync } from "../../utils/catchAsync";
 import { sendResponse } from "../../utils/sendResponse";
 import { authService } from "./auth.service";
 
+
 const cookieOptions = {
   httpOnly: true,
   secure: config.node_env === "production",
