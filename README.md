@@ -236,3 +236,11 @@ Every error, regardless of source (validation, Prisma, JWT, or manual `ApiError`
 - Remember to fill in: Live API URL, GitHub repo link, demo video link, and admin credentials
   in your assignment submission form.
 - 20+ meaningful commits are already included in this repo's history — see `git log --oneline`.
+
+---
+
+## 🌐 Live Demo
+
+👉 https://rentnest-backend-three.vercel.app/
+
+---
